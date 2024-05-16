@@ -1,0 +1,317 @@
+@import "_color.scss";
+@import "_fond.scss";
+
+/***** my works *****/
+.projects {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imgs/img12.jpg");
+    background-size: cover;
+}
+.projects > .black {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.projects-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (max-width: $screenWidth) {
+    .projects-flex {
+        display: inline;
+    }
+}
+// left part
+.projects-left-part {
+    width: 50%;
+    padding: 1vw 0;
+    font-size: 1.5vw;
+}
+@media only screen and (max-width: $screenWidth) {
+    .projects-left-part {
+        width: 90%;
+        height: 40%;
+        padding: 0;
+        font-size: 4vw;
+        margin-bottom: 12%;
+    }
+}
+.projects-left-part > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% / 3);
+}
+@media only screen and (max-width: $screenWidth) {
+    [class*="first-project"], [class*="second-project"],
+    [class*="third-project"], [class*="fourth-project"],
+    [class*="fifth-project"], [class*="sixth-project"] {
+        padding: 2% 5%;
+    }
+}
+// right part
+.projects-right-part {
+    width: 50%;
+    padding: 1vw 0;
+    font-size: 1.5vw;
+}
+@media only screen and (max-width: $screenWidth) {
+    .projects-right-part {
+        width: 90%;
+        padding: 0px;
+        height: 40%;
+        font-size: 4vw;
+    }
+}
+.projects-right-part > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% / 3);
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.des-title {
+    padding-bottom: 1vh;
+    color: rgb(0, 149, 255);
+    font-weight: 500;
+}
+.des-content {
+    font-size: 1.3vw;
+    padding-bottom: 1vh;
+}
+@media only screen and (max-width: $screenWidth) {
+    .des-content {
+        font-size: 3vw;
+    }
+}
+.des-content-vw {
+    font-size: 1vw;
+    padding-bottom: 1vh;
+}
+.des-remamber {
+    font-size: 1vw;
+    // padding-bottom: 1vh;
+}
+// .des-link {
+    // display: flex;
+    // text-align: left;
+    // justify-content: left;
+// }
+
+// both parts
+.logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 1vw 0 0 1vw;
+    cursor: pointer;
+    background-color: rgba(11, 11, 11, 0.4);
+}
+.description {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 1vw;
+    margin: 1vw 1vw 1vw 0;
+    border-radius: 0 1vw 1vw 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+@media only screen and (max-width: $screenWidth) {
+    .description {
+        padding: 1vw 3vw;
+    }
+}
+.bmw{
+    cursor: not-allowed;
+}
+
+// logos
+@keyframes logo-animation {
+    from {
+        width: 10vw;
+    }
+    30% {
+        width: 10.5vw;
+    }
+    to {
+        width: 10.5vw;
+    }
+}
+@keyframes on-leave-logo-animation {
+    from {
+        width: 10.5vw;
+    }
+    30% {
+        width: 10vw;
+    }
+    to {
+        width: 10vw;
+    }
+}
+.bmw-logo {
+    width: 10vw;
+}
+.bmw-logo-name {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    color:  $blue;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+@media only screen and (max-width: $screenWidth) {
+    .bmw-logo-name {
+        font-size: 7vw;
+    }
+}
+.bmw-private {
+    font-size: 1vw;
+    color:  rgb(255, 79, 79);
+}
+@media only screen and (max-width: $screenWidth) {
+    .bmw-private {
+        font-size: 2vw;
+    }
+}
+.bmw-logo:hover {
+    animation-name: logo-animation;
+    animation-duration: 2s;
+}
+.bmw-logo:not(:hover) {
+    animation-name: on-leave-logo-animation;
+    animation-duration: 2s;
+}
+.uninow-logo {
+    width: 10vw;
+    border-radius: 22%;
+}
+// .uninow-name {
+//     font-size: 40px;
+//     color:  $blue;
+//     font-weight: 600;
+// }
+.uninow-logo:hover {
+    animation-name: logo-animation;
+    animation-duration: 2s;
+}
+.uninow-logo:not(:hover) {
+    animation-name: on-leave-logo-animation;
+    animation-duration: 2s;
+}
+.mydoctor-logo {
+    width: 10vw;
+}
+.mydoctor-logo:hover {
+    animation-name: logo-animation;
+    animation-duration: 2s;
+}
+.mydoctor-logo:not(:hover) {
+    animation-name: on-leave-logo-animation;
+    animation-duration: 2s;
+}
+@keyframes special-logo-animation {
+    from {
+        width: 11vw;
+    }
+    30% {
+        width: 11.8vw;
+    }
+    to {
+        width: 11.8vw;
+    }
+}
+@keyframes on-leave-special-logo-animation {
+    from {
+        width: 11.8vw;
+    }
+    30% {
+        width: 11vw;
+    }
+    to {
+        width: 11vw;
+    }
+}
+.mychat-logo {
+    width: 11vw;
+}
+.mychat-logo:hover {
+    animation-name: special-logo-animation;
+    animation-duration: 2s;
+}
+.mychat-logo:not(:hover) {
+    animation-name: on-leave-special-logo-animation;
+    animation-duration: 2s;
+}
+.blog-logo {
+    width: 11vw;
+}
+.blog-logo:hover {
+    animation-name: special-logo-animation;
+    animation-duration: 2s;
+}
+.blog-logo:not(:hover) {
+    animation-name: on-leave-special-logo-animation;
+    animation-duration: 2s;
+}
+.-logo {
+    width: 11vw;
+}
+.-logo:hover {
+    animation-name: special-logo-animation;
+    animation-duration: 2s;
+}
+.-logo:not(:hover) {
+    animation-name: on-leave-special-logo-animation;
+    animation-duration: 2s;
+}
+@media only screen and (max-width: $screenWidth) {
+    [class*="blog-logo"], [class*="mychat-logo"],
+    [class*="mydoctor-logo"] {
+        width: 20vw;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    [class*="mydoctor-logo"], [class*="uninow-logo"] {
+        width: 16vw;
+    }
+}
+
+// vertical
+.test-vertical {
+    opacity: 75%;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    font-size: 8vh;
+    text-align: center;
+    font-weight: 600;
+    color:  $blue;
+}
+.mobile-test-vertical {
+    display: none;
+}
+@media only screen and (max-width: $screenWidth) {
+    .test-vertical {
+        display: none;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .mobile-test-vertical {
+        display: block;
+        font-size: 4vh;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 1vh;
+        color:  rgba(255, 255, 255, 0.3);
+    }
+}

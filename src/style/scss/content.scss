@@ -1,0 +1,398 @@
+@import "_color.scss";
+@import "_fond.scss";
+
+/***** contents *****/
+.content {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imgs/img2.jpg");
+    background-size: cover;
+}
+.content-black {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.content-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 100%;
+}
+@media only screen and (max-width: $screenWidth) {
+    /* For mobile: */
+    .content-content {
+        flex-direction: column;
+    }
+}
+.content-content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+@media only screen and (max-width: $screenWidth) {
+   .content-content {
+        flex-direction: column;
+    }
+}
+
+// left part
+.content-left-part {
+    text-align: left;
+    padding: 1vh 3vw;
+}
+@media only screen and (max-width: $screenWidth) {
+    .content-left-part {
+        height: 45%;
+     }
+ }
+.content-left-part > .title {
+    padding: 0.5vh 1vw;
+    font-weight: 700;
+    font-size: 2vw;
+    color: $blue;
+}
+@media only screen and (max-width: $screenWidth) {
+    .content-left-part > .title {
+        padding: 1vh 1vw 0;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+}
+.content-left-part > div {
+    padding: 1vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: $white;
+}
+@media only screen and (max-width: $screenWidth) {
+    .content-left-part > div {
+        font-size: 4vw;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .empty-dev {
+        display: none;
+    }
+}
+.content-left-part > .certificates {
+    padding: 0.5vh 1vw;
+    font-weight: 700;
+    font-size: 2vw;
+    color: $blue;
+}
+@media only screen and (max-width: $screenWidth) {
+    .content-left-part > .certificates {
+        font-size: 5vw;
+        font-weight: 500;
+        margin-top: 2vh;
+    }
+}
+
+// right part
+.content-right-part {
+    text-align: left;
+    padding: 1vh 3vw;
+}
+@media only screen and (max-width: $screenWidth) {
+    .content-right-part {
+        height: 50%;
+     }
+ }
+.some-skills {
+    padding: 0.5vh 1vw;
+    font-weight: 700;
+    font-size: 2vw;
+    color: $blue;
+}
+@media only screen and (max-width: $screenWidth) {
+    .some-skills {
+        font-size: 5vw;
+        font-weight: 500;
+    }
+}
+.skills-content{
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+}
+.skills-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 13vw;
+    padding: 1vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: $white;
+}
+@media only screen and (max-width: $screenWidth) {
+    .skills-name {
+        font-size: 4vw;
+        font-weight: 500;
+        padding: 1vw 3vw;
+    }
+}
+.skills-procent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vw;
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: $white;
+}
+.skills {
+    display: flex;
+    width: 27vw;
+    margin: 2vh 0 0 0;
+    height: 1.5vh;
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width: $screenWidth) {
+    .skills {
+        width: 50vw;
+        margin: 1vh 0 0 0;
+        padding: 1vh;
+        height: 1vh;
+        background-color: rgba(84, 84, 84, 0.5);
+    }
+}
+.skills > .innerline {
+    width: 27vw;
+    height: 1.5vh;
+    border-radius: 1vw;
+    background-color: $white;
+}
+@media only screen and (max-width: $screenWidth) {
+    .skills > .innerline {
+        height: 1.1vh;
+    }
+}
+.skills > .javaScript {
+    width: 90%;
+}
+.skills > .typeScript {
+    width: 80%;
+}
+.skills > .java {
+    width: 50%;
+}
+.skills > .node-react {
+    width: 85%;
+}
+.skills > .html-css {
+    width: 90%;
+}
+.skills > .database {
+    width: 85%;
+}
+.skills > .photoshop {
+    width: 75%;
+}
+.skills > .arabic {
+    width: 100%;
+}
+.skills > .germany {
+    width: 80%;
+}
+.skills > .english {
+    width: 60%;
+}
+
+// certificates 
+.certificates-content {
+    display: flex;
+}
+.certificates-content > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5vh;
+}
+.certificates-content > div > button {
+    background: none;
+    border: 0;
+}
+.dev-certificate {
+    width: 9vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: $screenWidth) {
+    .dev-certificate {
+        width: 15vw;
+    }
+}
+.lang-certificate {
+    width: 9vw;
+    margin: 0vw 3vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: $screenWidth) {
+    .lang-certificate {
+        width: 15vw;
+    }
+}
+.uni-certificate {
+    width: 9vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: $screenWidth) {
+    .uni-certificate {
+        width: 15vw;
+    }
+}
+@keyframes certificates-animation {
+    from {
+        width: 9vw;
+    }
+    30% {
+        width: 11vw;
+    }
+    to {
+        width: 11vw;
+    }
+}
+@keyframes on-leave-certificates-animation {
+    from {
+        width: 11vw;
+    }
+    30% {
+        width: 9vw;
+    }
+    to {
+        width: 9vw;
+    }
+}
+.certificates-content > div > button > img:hover {
+    animation-name: certificates-animation;
+    animation-duration: 2s;
+}
+@media only screen and (max-width: $screenWidth) {
+    .certificates-content > div > button > img:hover {
+        animation-name: none;
+    }
+}
+.certificates-content > div > button > img:not(:hover) {
+    animation-name: on-leave-certificates-animation;
+    animation-duration: 2s;
+}
+@media only screen and (max-width: $screenWidth) {
+    .certificates-content > div > button > img:not(:hover) {
+        animation-name: none;
+    }
+}
+@keyframes display-certificates-animation {
+    from {
+        width: 0;
+    }
+    30% {
+        width: 30%;
+    }
+    to {
+        width: 30%;
+    }
+}
+.display-certificate {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.display-certificate > button {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+    padding: 1vh 1vw;
+    color: $white;
+    font-size: 2vw;
+    border: 0;
+    border-radius: 5px;
+    background-color: $red;
+}
+.display-certificate > .close-button {
+    width: 4vw;
+    left: 4%;
+    top: 4%;
+}
+.display-certificate > button:hover {
+    font-size: 2vw;
+    cursor: pointer;
+    background-color: rgb(178, 4, 4);
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > button:hover {
+        font-size: 5vw;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > .close-button {
+        width: 10vw;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > button {
+        font-size: 5vw;
+    }
+}
+
+.display-certificate > .download:hover {
+    font-size: 2vw;
+    cursor: no-drop;
+    opacity: 20%;
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > .download {
+        color: rgb(116, 115, 115);
+        background-color: rgb(72, 1, 1);
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > .download:hover {
+        font-size: 5vw;
+        color: rgb(116, 115, 115);
+        background-color: rgb(72, 1, 1);
+        opacity: 100%;
+    }
+}
+.display-certificate > div {
+    padding: 3%;
+    height: 100%;
+}
+.display-certificate > div > img {
+    animation-name: display-certificates-animation;
+    animation-duration: 2s;
+    border-radius: 15px;
+    width: 30%;
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > div > img {
+        width: 80%;
+        margin-top: 20vh;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .display-certificate > div  > img {
+        animation-name: mobile-display-certificates-animation;
+        animation-duration: 2s;
+    }
+}
+@keyframes mobile-display-certificates-animation {
+    from {
+        width: 0;
+    }
+    30% {
+        width: 80%;
+    }
+    to {
+        width: 80%;
+    }
+}

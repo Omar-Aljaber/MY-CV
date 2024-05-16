@@ -1,0 +1,263 @@
+@import "_color.scss";
+@import "_fond.scss";
+
+/***** contacts *****/
+.contacts {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../imgs/img10.jpg");
+    background-size: cover;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts {
+        background-image: url("../imgs/img11.jpg");
+    }
+}
+.contacts-black {
+    width: 100%;
+    height: 100%;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.contacts-content {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 100%;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-content {
+        display: inline;
+    }
+}
+.contacts-content > div {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+// left part
+.contacts-left-part {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-content > div {
+        width: 100%;
+        padding-top: 2vh;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-content > .contacts-left-part {
+        height: 35%;
+    }
+}
+.contacts-left-part > .my-contacts {
+    padding: 3vh 2vw 0;
+    font-weight: 700;
+    font-size: 2vw;
+    color: $blue;
+}
+@media only screen and (max-width: $screenWidth) {
+    div.contacts-left-part > .my-contacts{
+        font-size: 6vw;
+        padding: 1vh 2vw 2vh;
+        font-weight: 500;
+        text-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+}
+.contacts-left-part > div {
+    display: flex;
+    flex-direction: row;
+}
+.contacts-left-part-names {
+    padding: 0 2vw;
+}
+.contacts-left-part-names > div {
+    font-size: 2vw;
+    padding: 1vw 0;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-left-part-names > div {
+        font-size: 5vw;
+        padding-left: 4vw;
+    }
+}
+.contacts-left-part-values {
+    padding: 0 2vw;
+}
+.contacts-left-part-values > div {
+    font-size: 2vw;
+    padding: 1vw;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-left-part-values > div {
+        font-size: 5vw;
+    }
+}
+.contacts-left-part-values > div > a {
+    color: $white;
+}
+.choose-time-button {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: $white;
+    font-size: 2vw;
+}
+.choose-time-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.choose-time-message{
+    width: 60%;
+    margin-left: 2vw;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.choose-time-message > .appointment {
+    font-size: 1.5vw;
+    margin: 1vw;
+    padding: 0 1vw;
+    color: $white;
+}
+.choose-time-message > .appointment > .i-would {
+    padding: 0.3vw 0 ;
+}
+.choose-time-message > .appointment > div > input {
+    background: none;
+    width: 5vw;
+    font-size: 1.5vw;
+    border: 0;
+    margin: 0 0 0 1vw;
+    color: $white;
+}
+.choose-time-message > .appointment > button {
+    background: rgb(86, 86, 86);
+    width: 100%;
+    height: 5vh;
+    font-size: 1.5vw;
+    border: 0;
+    border-radius: 5px;
+    margin: 1vw 0;
+    color: $white;
+}
+.choose-time-message > .appointment > button:hover {
+    background: rgba(84, 84, 84, 0.5);
+    cursor: pointer;
+}
+
+// right part
+.contacts-right-part {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.contacts-right-part > .write-message {
+    padding: 3vh 2vw 0;
+    font-weight: 700;
+    font-size: 2vw;
+    color: $blue;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-content > .contacts-right-part {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-right-part > .write-message {
+        font-size: 6vw;
+        font-weight: 500;
+        padding: 1vh 3vh 2vh 2vw;
+        text-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+}
+.contacts-right-part > form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2vh 2vw;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-right-part > form {
+        width: auto;  
+        height: 80%;
+        padding: 2vh 5vw 1vh;
+    }
+}
+.contacts-right-part > form > div > input {
+    width: 45%;
+    font-size: 1vw;
+    padding: 7px;
+    color: $white;
+    font-family: sans-serif;
+    background-color: rgba(108, 108, 108, 0.3);
+    border: 0;
+    border-radius: 10px 0 0 0;
+    margin: 0 0 5px 0;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-right-part > form > div > input {
+        font-size: 4vw;
+    }
+}
+.contacts-right-part > form > div > .right {
+    border-radius: 0 10px 0 0;
+    float: right;
+}
+.contacts-right-part > form > div > .left {
+    float: left;
+}
+.contacts-right-part > form > textarea {
+    height: 70vh;
+    font-size: 2vw;
+    padding: 10px;
+    color: $white;
+    font-family: sans-serif;
+    background-color: rgba(108, 108, 108, 0.3);
+    border: 0;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-right-part > form > textarea {
+        height: 50vh;
+        font-size: 5vw;
+    }
+}
+.contacts-right-part > form > button {
+    font-size: 1.5vw;
+    padding: 5px;
+    color: $white;
+    background-color: rgba(108, 108, 108, 0.3);
+    border: 0;
+    border-radius:  0 0 10px 10px;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: $screenWidth) {
+    .contacts-right-part > form > button {
+        font-size: 5vw;
+    }
+}
+.contacts-right-part > form > button:hover {
+    background: rgba(108, 108, 108, 0.5);
+    cursor: pointer;
+}
+
+.contacts > footer {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    padding: 5px 0;
+    background-color: gray;
+    color: white;
+    div {
+        display: inline;
+    }
+    a {
+        cursor: pointer;
+        text-decoration: underline;
+        color: white;
+    }
+}
